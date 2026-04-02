@@ -4,7 +4,7 @@ A simple and responsive stopwatch built using HTML, CSS, and JavaScript.
 This project demonstrates basic JavaScript concepts like timing functions and DOM manipulation.
 
 ## 🚀 Features
-- Start, Stop, and Reset functionality
+- Start, Stop, lap, and Reset functionality
 - Accurate time tracking
 - Clean and user-friendly UI
 - Responsive design
