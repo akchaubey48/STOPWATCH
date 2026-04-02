@@ -68,17 +68,13 @@ reset.addEventListener('click', () => {
 });
 
 
-lapBtn.addEventListener('click', () => {
-    if (timer === null) return; // no running → no lap
+let lapCount = 1;
 
-    let lapTime = 
-        `${String(h).padStart(2,'0')} : 
-         ${String(m).padStart(2,'0')} : 
-         ${String(s).padStart(2,'0')} : 
-         ${String(ms).padStart(2,'0')}`;
+lapBtn.addEventListener('click', () => {
+    if (timer === null) return;
 
     let lapItem = document.createElement("div");
-    lapItem.textContent = lapTime;
+    lapItem.textContent = `Lap ${lapCount++} - ${hrDisplay.textContent}:${minDisplay.textContent}:${secDisplay.textContent}:${mls.textContent}`;
 
-    lapsContainer.prepend(lapItem); // latest lap on top
+    lapsContainer.prepend(lapItem);
 });
